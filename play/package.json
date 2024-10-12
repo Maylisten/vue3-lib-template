@@ -1,0 +1,17 @@
+{
+  "name": "play",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">= 18.0.0"
+  },
+  "scripts": {
+    "dev": "vite"
+  },
+  "dependencies": {
+    "@xuhan57/vue3-lib-template-components": "workspace:^",
+    "pinia": "^2.2.2",
+    "vue-router": "^4.4.3"
+  }
+}

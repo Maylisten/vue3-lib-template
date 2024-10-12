@@ -1,0 +1,40 @@
+{
+  "name": "@xuhan57/scripts",
+  "private": true,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
+  "exports": {
+    "require": {
+      "types": "./dist/index.d.cts",
+      "default": "./dist/index.cjs"
+    },
+    "import": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "play:dev": "gulp devPlay",
+    "doc:dev": "gulp devDoc",
+    "doc:build": "gulp buildDoc",
+    "cli:clean": "gulp cleanCli",
+    "cli:build": "gulp buildCli",
+    "cli:release": "gulp releaseCli",
+    "components:clean": "gulp cleanComponents",
+    "components:build": "gulp buildComponents",
+    "components:release": "gulp releaseComponents",
+    "dev": "gulp dev",
+    "clean": "gulp clean",
+    "build": "gulp build",
+    "release": "gulp releaseComponents"
+  },
+  "devDependencies": {
+    "@types/gulp": "^4.0.17",
+    "@types/node": "^22.7.5",
+    "gulp": "^5.0.0",
+    "gulp-clean": "^0.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}

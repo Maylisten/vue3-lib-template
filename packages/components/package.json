@@ -1,0 +1,55 @@
+{
+  "name": "@xuhan57/vue3-lib-template-components",
+  "version": "0.0.0",
+  "description": "vue3 组件库模板",
+  "keywords": [
+    "vue3-lib-template",
+    "vue3-lib-template-components",
+    "vue",
+    "vue3",
+    "lib",
+    "template",
+    "cli"
+  ],
+  "author": "Mayer",
+  "license": "MIT",
+  "private": false,
+  "homepage": "",
+  "types": "index.d.ts",
+  "type": "module",
+  "files": [
+    "lib/*",
+    "LICENSE",
+    "README.md"
+  ],
+  "main": "./lib/vue3-lib-template-components.cjs",
+  "module": "./lib/vue3-lib-template-components.js",
+  "browser": "./lib/vue3-lib-template-components.umd.cjs",
+  "style": "./lib/style.css",
+  "exports": {
+    ".": {
+      "import": "./lib/vue3-lib-template-components.js",
+      "require": "./lib/vue3-lib-template-components.cjs",
+      "types": "./lib/index.d.ts"
+    },
+    "./style.css": {
+      "import": "./lib/style.css",
+      "require": "./lib/style.css",
+      "default": "./lib/style.css"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maylisten/vue3-lib-template"
+  },
+  "bugs": {
+    "url": "https://github.com/Maylisten/vue3-lib-template/issues"
+  },
+  "engines": {
+    "node": ">= 18.0.0"
+  },
+  "scripts": {
+    "build": "vue-tsc --project ../../tsconfig.json && vite build",
+    "release": "release-it"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": {
+    "baseUrl": "packages/components",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
+  },
+  "include": [
+    "packages/components/**/*.ts",
+    "packages/components/**/*.d.ts",
+    "packages/components/**/*.tsx",
+    "packages/components/**/*.vue"
+  ],
+  "exclude": [
+    "packages/components/node_modules",
+    "packages/components/vite.config.ts"
+  ]
+}

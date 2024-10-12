@@ -1,0 +1,14 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.components.json"
+    },
+    {
+      "path": "./tsconfig.play.json"
+    },
+    {
+      "path": "./tsconfig.vite.json"
+    }
+  ]
+}

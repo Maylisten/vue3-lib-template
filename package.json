@@ -1,0 +1,48 @@
+{
+  "private": true,
+  "engines": {
+    "node": ">= 18.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm run play:dev",
+    "clean": "pnpm -C scripts clean",
+    "build": "pnpm -C scripts build",
+    "release": "pnpm run components:release",
+    "play:dev": "pnpm -C scripts play:dev",
+    "doc:dev": "pnpm -C scripts doc:dev",
+    "doc:build": "pnpm -C scripts doc:build",
+    "cli:clean": "pnpm -C scripts cli:clean",
+    "cli:build": "pnpm -C scripts cli:build",
+    "cli:release": "pnpm -C scripts cli:release",
+    "components:clean": "pnpm -C scripts components:clean",
+    "components:build": "pnpm -C scripts components:build",
+    "components:release": "pnpm -C scripts components:release",
+    "lint": "eslint .",
+    "fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "camelcase": "^8.0.0",
+    "vue": "^3.4.37"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/eslint-parser": "^7.25.1",
+    "@eslint/js": "^10.0.0",
+    "@types/node": "^22.5.4",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.28.0",
+    "globals": "^15.9.0",
+    "less": "^4.2.0",
+    "postcss": "^8.4.45",
+    "release-it": "^17.8.2",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.4.0",
+    "vite": "^5.4.1",
+    "vite-plugin-dts": "^4.2.3",
+    "vite-plugin-eslint": "^1.8.1",
+    "vue-tsc": "^2.0.29"
+  }
+}

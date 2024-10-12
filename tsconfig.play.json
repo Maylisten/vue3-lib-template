@@ -1,0 +1,21 @@
+{
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": {
+    "baseUrl": "play",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
+  },
+  "include": [
+    "play/**/*.ts",
+    "play/**/*.d.ts",
+    "play/**/*.tsx",
+    "play/**/*.vue"
+  ],
+  "exclude": [
+    "play/node_modules",
+    "play/vite.config.ts"
+  ]
+}
