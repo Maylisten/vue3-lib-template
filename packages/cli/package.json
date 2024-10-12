@@ -18,7 +18,7 @@
     "LICENSE",
     "README.md"
   ],
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "./lib/cli.cjs",
   "module": "./lib/cli.mjs",
   "types": "./lib/cli.d.cts",
