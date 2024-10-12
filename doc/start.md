@@ -1,7 +1,7 @@
 # 快速开始
 ## 使用脚手架创建项目
 ```shell
-npm create @xuhan57/vue3-lib-template
+npm create vue3-lib-template
 ```
 ## 安装 pnpm
 项目利用 pnpm 构建 Monorepo, 如果你没有pnpm，请执行
