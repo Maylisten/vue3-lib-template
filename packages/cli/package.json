@@ -15,12 +15,10 @@
   "homepage": "https://maylisten.github.io/vue3-lib-template",
   "files": [
     "lib/*",
-
-
     "LICENSE",
     "README.md"
   ],
-  "version": "1.0.1",
+  "version": "1.1.0",
   "main": "./lib/cli.cjs",
   "module": "./lib/cli.mjs",
   "types": "./lib/cli.d.cts",
