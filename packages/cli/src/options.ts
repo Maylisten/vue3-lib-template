@@ -12,16 +12,51 @@ export interface UserOptions {
 const defaultProjectName = "vue3-components-project";
 
 const commandLineOptions = [
-  {name: "version", alias: "v", type: Boolean},
-  {name: "help", alias: "h", type: Boolean},
-  {name: "name", alias: "n", type: String},
-  {name: "tailwind", alias: "w", type: Boolean},
-  {name: "document", alias: "d", type: Boolean},
+  // {name: "version", alias: "v", type: Boolean},
+  // {name: "help", alias: "h", type: Boolean},
+  // {name: "name", alias: "n", type: String},
+  // {name: "tailwind", alias: "w", type: Boolean},
+  // {name: "document", alias: "d", type: Boolean},
 ];
 const promptsOptions = [
-  {name: "name", type: "text", message: `project-name/npm-package-name(default: ${defaultProjectName})`},
-  {name: "tailwind", type: "confirm", message: "add tailwindcss?", initial: true},
-  {name: "document", type: "confirm", message: "generate document?", initial: true},
+  {
+    name: "name",
+    type: "text",
+    message: `project-name/npm-package-name(default: ${defaultProjectName})`,
+    onState: (state: { aborted: boolean }) => {
+      if (state.aborted) {
+        process.nextTick(() => {
+          process.exit(0);
+        });
+      }
+    }
+  },
+  {
+    name: "tailwind",
+    type: "confirm",
+    message: "add tailwindcss?",
+    initial: true,
+    onState: (state: { aborted: boolean }) => {
+      if (state.aborted) {
+        process.nextTick(() => {
+          process.exit(0);
+        });
+      }
+    }
+  },
+  {
+    name: "document",
+    type: "confirm",
+    message: "generate document?",
+    initial: true,
+    onState: (state: { aborted: boolean }) => {
+      if (state.aborted) {
+        process.nextTick(() => {
+          process.exit(0);
+        });
+      }
+    }
+  },
 ];
 
 export async function getOptions() {
