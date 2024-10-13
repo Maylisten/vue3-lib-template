@@ -22,7 +22,6 @@ const promptsOptions = [
   {name: "name", type: "text", message: `project-name/npm-package-name(default: ${defaultProjectName})`},
   {name: "tailwind", type: "confirm", message: "add tailwindcss?", initial: true},
   {name: "document", type: "confirm", message: "generate document?", initial: true},
-  {name: "git", type: "text", message: "git(example: https://github.com/Maylisten/vue3-lib-template)?", default: "https://github.com/Maylisten/vue3-lib-template"}
 ];
 
 export async function getOptions() {

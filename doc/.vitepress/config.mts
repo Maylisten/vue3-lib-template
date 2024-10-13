@@ -16,10 +16,12 @@ export default defineConfig({
     sidebar: [
       {text: '简介', link: '/intro'},
       {text: '快速开始', link: '/start'},
+      {text: '打包发布', link: '/publish'},
     ],
 
     socialLinks: [
       {icon: 'github', link: 'https://github.com/Maylisten/vue3-lib-template'}
     ]
-  }
+  },
+  base: "/vue3-lib-template",
 })

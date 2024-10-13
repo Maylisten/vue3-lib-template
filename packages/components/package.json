@@ -14,7 +14,7 @@
   "author": "Mayer",
   "license": "MIT",
   "private": false,
-  "homepage": "",
+  "homepage": "https://maylisten.github.io/vue3-lib-template",
   "types": "index.d.ts",
   "type": "module",
   "files": [

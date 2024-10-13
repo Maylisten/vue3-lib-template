@@ -1,7 +1,8 @@
 # 快速开始
 ## 使用脚手架创建项目
 ```shell
-npm create vue3-lib-template
+// 将 @domain/example 替换为你想发布的 npm 库名
+npm create vue3-lib-template -n @domain/example
 ```
 ## 安装 pnpm
 项目利用 pnpm 构建 Monorepo, 如果你没有pnpm，请执行
@@ -23,15 +24,5 @@ pnpm run dev
 修改 doc 文件夹中的内容，它是用 vitepress 构建的纯静态页面，执行命令预览文档
 ```shell
 pnpm run doc:dev
-```
-## 打包项目
-执行打包命令打包你的组件库和文档
-```shell
-pnpm run build
-```
-## 发布项目
-利用 release-it 快速发布项目版本并同步到 npm 仓库
-```shell
-pnpm run release
 ```
 

@@ -9,7 +9,6 @@ import {UserOptions} from "./options";
 
 const templateRemoteUrl = "Maylisten/vue3-lib-template";
 let domain = "";
-let gitPath = "";
 let name = "";
 let completeName = "";
 let rootPath = "";
@@ -22,7 +21,6 @@ let docPath = "";
 
 const setProjectInfo = (option: UserOptions) => {
   const projectName = option.name;
-  gitPath = option.git;
   domain = projectName.trim().split("/").at(-2) ?? "";
   name = projectName.trim().split("/").at(-1);
   completeName = `${domain}${domain ? "/" : ""}${name}`;
@@ -87,7 +85,7 @@ const resetComponentsPackageJson = async () => {
   json.keywords = [];
   json.description = "";
   json.author = "";
-  json.homepage = `${gitPath}`;
+  json.homepage = ``;
   json.main = `./lib/${name}.cjs`;
   json.module = `./lib/${name}.js`;
   json.browser = `./lib/${name}.cjs`;
@@ -103,8 +101,8 @@ const resetComponentsPackageJson = async () => {
       "default": "./lib/style.css"
     }
   };
-  (json.repository as Record<string, unknown>).url = `git+${gitPath}`;
-  (json.bugs as Record<string, unknown>).url = `${gitPath}/issues`;
+  (json.repository as Record<string, unknown>).url = ``;
+  (json.bugs as Record<string, unknown>).url = ``;
   await writeJSON(componentsPackageJsonPath, json, {spaces: 2});
 };
 

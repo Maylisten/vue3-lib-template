@@ -12,9 +12,11 @@
   ],
   "author": "Mayer",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://maylisten.github.io/vue3-lib-template",
   "files": [
     "lib/*",
+
+
     "LICENSE",
     "README.md"
   ],
