@@ -142,7 +142,8 @@ const removeTailwind = async () => {
 const removeDoc = async () => {
   const deletePaths = [
     path.join(docPath),
-    ...['build', 'clean', 'dev'].map(dir => path.join(scriptsPath, `${dir}/modules/doc.ts`))
+    ...['build', 'clean', 'dev'].map(dir => path.join(scriptsPath, `${dir}/modules/doc.ts`)),
+    path.join(rootPath, ".github"),
   ];
   deletePaths.forEach(targetPath => shelljs.rm("-rf", targetPath));
 

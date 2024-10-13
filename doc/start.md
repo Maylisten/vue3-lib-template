@@ -2,7 +2,10 @@
 ## 使用脚手架创建项目
 ```shell
 // 将 @domain/example 替换为你想发布的 npm 库名
-npm create vue3-lib-template -n @domain/example
+npm create vue3-lib-template@latest
+✔ project-name/npm-package-name(default: vue3-components-project) … @domain/example
+✔ add tailwindcss? … yes
+✔ generate document? … yes
 ```
 ## 安装 pnpm
 项目利用 pnpm 构建 Monorepo, 如果你没有pnpm，请执行
