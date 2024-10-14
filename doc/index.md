@@ -16,9 +16,9 @@ hero:
 
 features:
   - title: 脚手架
-    details: npm create @xuhan57/vue3-lib-template
+    details: npm create vue3-lib-template
   - title: 快速发布
-    details: 自动发布一个组件(库)到 npm 和 github！
+    details: 自动发布到 npm 和 github
   - title: tailwind
     details: 支持是否添加 tailwindcss 
 ---
